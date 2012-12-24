@@ -1,0 +1,26 @@
+{
+    "name": "paysio/paysio-php",
+    "description": "Pays I/O PHP Library",
+    "type": "library",
+    "keywords": [
+        "paysio",
+        "pays io",
+        "pays i/o",
+        "payment processing"
+    ],
+    "homepage": "http://pays.io/",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.0",
+        "ext-curl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Paysio\\": "library/",
+            "PaysioTest\\": "tests/"
+        }
+    }
+}
