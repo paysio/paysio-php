@@ -2,7 +2,7 @@
 
 namespace Paysio;
 
-use \Paysio\Api\AbstractResource as AbstractResource;
+use \Paysio\Api\AbstractResource;
 
 class Coupon extends AbstractResource
 {

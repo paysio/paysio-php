@@ -2,7 +2,7 @@
 
 namespace Paysio\Api\Resource;
 
-use \Paysio\Api\AbstractResource as AbstractResource;
+use \Paysio\Api\AbstractResource;
 
 class Collection implements \IteratorAggregate, \ArrayAccess, \Countable
 {

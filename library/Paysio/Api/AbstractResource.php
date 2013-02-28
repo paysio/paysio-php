@@ -2,7 +2,7 @@
 
 namespace Paysio\Api;
 
-use \Paysio\Api as Api;
+use \Paysio\Api;
 
 class AbstractResource
 {
