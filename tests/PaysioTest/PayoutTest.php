@@ -8,6 +8,7 @@ class PayoutTest extends AbstractTest
     {
         $payout = \Paysio\Payout::create(array(
             'amount' => 1234,
+            'currency_id' => 'rur',
             'description' => 'Test charge',
             'payment_system_id' => 'test_phone_payout',
             'wallet' => array(
@@ -17,6 +18,7 @@ class PayoutTest extends AbstractTest
 
         $this->assertNotEmpty($payout->id);
         $this->assertEquals(1234, $payout->amount);
+        $this->assertEquals('rur', $payout->currency_id);
         $this->assertEquals('Test charge', $payout->description);
         $this->assertEquals('test_phone_payout', $payout->payment_system_id);
         $this->assertEquals('pending', $payout->status);
