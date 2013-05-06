@@ -169,7 +169,7 @@ class ChargeTest extends AbstractTest
 
         $response = $charge->getResponse();
         $this->assertEquals(201, $response->getCode());
-        $this->assertContains('payment/system/success?charge_id=' . $charge->id, $response->getLocation());
+        $this->assertContains('payment/success?charge_id=' . $charge->id, $response->getLocation());
 
         return $charge;
     }
@@ -184,7 +184,7 @@ class ChargeTest extends AbstractTest
 
         $response = $charge->getResponse();
         $this->assertEquals(201, $response->getCode());
-        $this->assertContains('payment/system/success?charge_id=' . $charge->id, $response->getLocation());
+        $this->assertContains('payment/success?charge_id=' . $charge->id, $response->getLocation());
 
         $this->assertInstanceOf('\Paysio\Wallet', $charge->wallet);
         $this->assertEquals('phone_number', $charge->wallet->type);
